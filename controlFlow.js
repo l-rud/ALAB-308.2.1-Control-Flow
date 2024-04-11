@@ -118,3 +118,22 @@ console.log('Radius squared for expanded garden is ' + radiusSquaredForExpandGar
 
 radiusForExpandGarden = Math.sqrt(radiusSquaredForExpandGarden);
 console.log('Radius of this expanded garden is ' + radiusForExpandGarden);
+
+
+//Part 3: Errors in Judgement
+
+/*The scientists decided not to listen to your recommendations, 
+and have instead started 
+with 100 plants in the original 5-meter-radius garden.*/
+
+let x = 100 * onePlantMinspace;
+
+try {
+	if (x > area) {
+		console.log("Not enough space!");
+	} else {
+		throw "Enough space!";
+	}
+} catch (error) {
+	console.log(error);
+}
