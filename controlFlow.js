@@ -59,6 +59,19 @@ console.log("Monitor them");
 console.log("Plant them")
 }
 
+//Implement control flow to make decisions 
+//on whether the plants should be at the beginning of the second week:
+
+if (allPlantsAreaWeek2 > maxCapacity80)
+{
+ console.log("Pruned them");   
+} else if (allPlantsAreaWeek2 >= maxCapacity50){
+console.log("Monitor them");   
+} else if (allPlantsAreaWeek2 == maxCapacity80){
+    console.log("Monitor them")  
+} else {
+console.log("Plant them")
+}
 
 
 
