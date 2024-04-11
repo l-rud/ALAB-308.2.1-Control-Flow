@@ -9,7 +9,11 @@ const area = pi*radius*radius;
 console.log(area);
 
 //Each plant requires a minimum space of 0.8 square meters
-plantMinspace = 0.8;
+onePlantMinspace = 0.8;
 
 //The area is starting with 20 plants
 startPlants = 20;
+
+//The starting area for all plants
+allPlantArea = onePlantMinspace * startPlants;
+console.log(allPlantArea);
