@@ -87,3 +87,34 @@ console.log("Monitor them");
 console.log("Plant them")
 }
 
+
+//Part 2: Thinking Bigger
+
+/*The conservation area in which the garden is located 
+has multiple other gardens. 
+Using the logic you have already created, determine:
+The amount of additional space that would be required 
+if the scientists were to start with 100 plants, 
+and did not prune them for 10 weeks.
+If the space remained circular, 
+what would be the radius of this expanded garden?*/
+
+
+/*The amount of additional space that would be required 
+if the scientists were to start with 100 plants, 
+and did not prune them for 10 weeks.*/
+
+additionalSpace = (100 * onePlantMinspace * 10) - area;
+console.log('The additional space is ' + additionalSpace);
+
+//Area of this expanded garden is
+areaExpandGarden = 100 * onePlantMinspace * 10;
+console.log('The area of this expanded garden is ' + areaExpandGarden);
+
+/*If the space remained circular, 
+what would be the radius of this expanded garden?*/
+radiusSquaredForExpandGarden = areaExpandGarden / pi;
+console.log('Radius squared for expanded garden is ' + radiusSquaredForExpandGarden);
+
+radiusForExpandGarden = Math.sqrt(radiusSquaredForExpandGarden);
+console.log('Radius of this expanded garden is ' + radiusForExpandGarden);
